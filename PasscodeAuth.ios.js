@@ -5,11 +5,10 @@
 'use strict';
 
 var React = require('react-native');
-var {
-  NativeModules
-} = React;
+var { NativeModules } = React;
 
 var NativePasscodeAuth = NativeModules.PasscodeAuth;
+const { AuthError } = require('./errors');
 
 /**
  * High-level docs for the Passcode iOS API can be written here.
@@ -34,7 +33,7 @@ var PasscodeAuth = {
     // Set auth reason
     if (reason) {
       authReason = reason;
-    // Set as empty string if no reason is passed
+      // Set as empty string if no reason is passed
     } else {
       authReason = ' ';
     }
@@ -53,7 +52,7 @@ var PasscodeAuth = {
 };
 
 function createError(error) {
-  return new Error(error);
+  return new AuthError(error);
 }
 
 module.exports = PasscodeAuth;
