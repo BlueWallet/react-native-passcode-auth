@@ -1,5 +1,7 @@
 # React Native Passcode Auth
 
+## This package is being used as a dependency for de Stopcoach and EASMobile to enable Passcode fallback for failed Touch/Face ID attempts!
+
 [![npm version](https://img.shields.io/npm/v/react-native-passcode-auth.svg?style=flat-square)](https://www.npmjs.com/package/react-native-passcode-auth)
 [![npm downloads](https://img.shields.io/npm/dm/react-native-passcode-auth.svg?style=flat-square)](https://www.npmjs.com/package/react-native-passcode-auth)
 
